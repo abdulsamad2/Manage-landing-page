@@ -1,0 +1,24 @@
+{
+  "name": "manage-landing-page",
+  "version": "1.0.0",
+  "description": "## Welcome! 👋",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "parcel": "^2.6.2",
+    "postcss": "^8.4.14",
+    "postcss-import": "^14.1.0",
+    "tailwind-bootstrap-grid": "^5.0.1",
+    "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.4",
+    "swiper": "^8.3.1"
+  }
+}
