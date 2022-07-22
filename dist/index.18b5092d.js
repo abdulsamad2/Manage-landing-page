@@ -535,6 +535,13 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
+// import Swiper styles
+var swiper = new (0, _swiperDefault.default)(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true
+    }
+});
 
 },{"swiper":"cCbRx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cCbRx":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
