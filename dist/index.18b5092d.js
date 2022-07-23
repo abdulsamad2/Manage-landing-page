@@ -532,6 +532,11 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"cVDnY":[function(require,module,exports) {
+const slides = document.querySelectorAll(".slide");
+slides.forEach((s, i)=>{
+    s.style.transform = `translate(${100 * i})`;
+    console.log(s);
+});
 
 },{}]},["3q8dD","cVDnY"], "cVDnY", "parcelRequire4171")
 
