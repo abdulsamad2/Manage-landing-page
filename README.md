@@ -10,6 +10,8 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+I completed this challenge and create the landing page using html tailwindCss and Vanilla JS
 
+## Live url of the project
 
+[absamad Manage Landing](absamad-manage-landingpage.surge.sh)
