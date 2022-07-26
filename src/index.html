@@ -12,14 +12,28 @@
         <!-- Header -->
 
         <div class="container max-w-screen-xl">
-            <div class="row px-4 py-10">
-                <div class="col">
-                    <img src="/images/logo.svg" alt="">
+            <div class="md:flex block justify-between px-4 py-10">
+                <div class="">
+                    <img src="/images/logo.svg" alt="" class="">
                 </div>
-                <div class="col ">
-                    <div class="flex justify-end">
-                        <img src="/images/icon-hamburger.svg" class="block md:hidden" alt="">
+                <div class="-mt-5 md:mt-0">
+                    <div class="flex justify-end hamburger-parent">
+                        <img src="/images/icon-hamburger.svg" class="block md:hidden" alt="" id="hamburger"
+                            data-icon-close="/images/icon-close.svg
+                            " data-icon-ham="/images/icon-hamburger.svg">
+
                     </div>
+                    <div class="menu-items md:space-x-6 hidden flex-col  overflow-hidden space-y-4 divide-y md:divide-y-0 md:mt-0 w-[80vw]  md:w-auto mt-10   md:block md:space-y-0"
+                        id="menu-items">
+                        <a href="#">Pricing</a>
+                        <a href="#">Product</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Community</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#" class="bg-BrightRed text-white py-3 px-6 rounded-3xl">Get Started</a>
                 </div>
             </div>
         </div>
@@ -124,57 +138,155 @@
             </div>
         </div>
         <!-- slider -->
-        <section class="container max-w-screen-xl mt-10">
+        <div class="container max-w-screen-xl mt-10">
+            <div class="space-y-4 max-w-xs mx-auto md:max-w-md ">
+                <div class="text-center max-w-sm mx-auto">
+                    <h2 class="text-3xl font-bold text-DarkBlue leading-relaxed ">
+                        What they’ve said
 
+                    </h2>
+                </div>
+            </div>
+            <section class="container max-w-screen-xl mt-16 mx-auto">
 
-            <div class="space-y-4 max-w-xs md:mx-0 md:max-w-md mx-auto ">
-                <h2 class="text-3xl font-bold text-DarkBlue leading-relaxed text-center">
-                    What they’ve said
-
-                </h2>
-
-                <div class="col-12">
+                <div class="">
                     <div class="testi text-center space-y-6">
-                        <div class="slide absolute">
-                            <img src="/images/avatar-anisha.png" alt="" class="block w-30 mx-auto">
-                            <div class="caption  py-2">
-                                <p>Ali Bravo</p>
+                        <div class="slider lg:overflow-visible overflow-x-hidden h-80">
+                            <!-- Additional required wrapper -->
+                            <div class="wrapper  relative transition-transform	space-x-10">
+                                <!-- Slides -->
+                                <div class="slide absolute block ease-in max-w-sm mx-auto  ">
+                                    <div class="">
+                                        <img src="/images/avatar-anisha.png" alt="" class="block w-30 mx-auto">
+                                        <div class="caption  py-2">
+                                            <p>Ali Bravo</p>
+                                        </div>
+                                        <div class="text-DarkGrayishBlue font-normal text-base max-w-sm">
+                                            <p>“We have been able to cancel so many other subscriptions since using
+                                                Manage. There is no more cross-channel confusion and everyone is much
+                                                more focused.”</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="slide absolute block ease-in max-w-sm mx-auto ">
+                                    <div class=" ">
+                                        <img src="/images/avatar-richard.png" alt="" class="block w-30 mx-auto">
+                                        <div class="caption  py-2">
+                                            <p>Richard</p>
+                                        </div>
+                                        <div class="text-DarkGrayishBlue font-normal text-base max-w-sm">
+                                            <p>“Manage allows us to provide structure and process. It keeps us organized
+                                                and focused. I can’t stop recommending them to everyone I talk to!”</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide absolute block ease-in max-w-sm mx-auto">
+                                    <div class=" max-w-sm mx-auto">
+                                        <img src="/images/avatar-shanai.png" alt="" class="block w-30 mx-auto">
+                                        <div class="caption  py-2">
+                                            <p>Anisha</p>
+                                        </div>
+                                        <div class="text-DarkGrayishBlue font-normal text-base max-w-sm">
+                                            <p>“WTheir software allows us to track, manage and collaborate on our
+                                                projects
+                                                from anywhere. It keeps the whole team in-sync without being intrusive.”
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-DarkGrayishBlue font-normal text-base">
-                                <p>“We have been able to cancel so many other subscriptions since using
-                                    Manage. There is no more cross-channel confusion and everyone is much
-                                    more focused.”</p>
-                            </div>
-                        </div>
-                        <div class="slide absolute">
-                            <img src="/images/avatar-anisha.png" alt="" class="block w-30 mx-auto">
-                            <div class="caption  py-2">
-                                <p>Ali Bravo</p>
-                            </div>
-                            <div class="text-DarkGrayishBlue font-normal text-base">
-                                <p>“We have been able to cancel so many other subscriptions since using
-                                    Manage. There is no more cross-channel confusion and everyone is much
-                                    more focused.”</p>
-                            </div>
-                        </div>
+                            <div class="slider-btn flex justify-between mt-20 md:hidden">
+                                <button class="btn-left z-50 bg-black"><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6" fill="#fff" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M11 19l-7-7 7-7m8 14l-7-7 7-7" />
+                                    </svg></button>
+                                <button class="btn-right z-50 bg-black"><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="h-6 w-6" fill="#fff" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                                    </svg></button>
 
 
-                        <div class="dots">
-                            <ul class="flex justify-center space-x-2">
-                                <li class="bg-BrightRed w-2 h-2 rounded-full"></li>
-                                <li class="bg-red-200 w-2 h-2 rounded-full"></li>
-                                <li class="bg-red-200 w-2 h-2 rounded-full"></li>
+
+                            </div>
+                        </div>
+                        <div class="md:hidden">
+                            <ul class="flex justify-center space-x-2 dots">
+                                <!-- here list is being added using js -->
                             </ul>
                         </div>
-                        <div class="relative">
+                        <div class="relative mx-auto">
                             <a href="#" class="bg-BrightRed text-white py-3 px-6 rounded-3xl">Get Started</a>
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
+        </div>
+
+        </section>
+
+
+        <!-- footer section -->
+        <section class=" mt-12 bg-BrightRed  py-16 md:py-20">
+            <div class="flex items-center flex-col md:flex-row justify-around space-y-14 md:space-y-0">
+                <div class="">
+                    <h2 class="md:text-left text-center text-3xl md:text-5xl text-white md:max-w-xl max-w-sm font-sans">
+                        Simplify
+                        how
+                        your
+                        team works today.
+                    </h2>
+                </div>
+                <div class=" my-0">
+                    <a href="#" class="bg-white text-BrightRed md:py-5 md:px-8 py-3 px-6 rounded-3xl">Get Started</a>
+                </div>
             </div>
 
         </section>
+
+        <div class="bg-VeryDarkBlue py-11">
+            <div class="flex items-center flex-col md:flex-row justify-around max-w-screen-xl mx-auto">
+                <div class="md:order-last md:space-y-12">
+                    <form action="#" class="flex space-x-6">
+                        <input type="email" placeholder="Updates in your inbox" class="rounded-full px-4 py-3">
+                        <input type="submit" value="Go" class="text-white bg-BrightRed px-8 py-2 rounded-full">
+                    </form>
+                    <div class="hidden md:block">
+                        <p class="text-gray-400">Copyright 2020. All Rights Reserved</p>
+                    </div>
+                </div>
+                <div class="flex  text-left space-x-32 mt-10 text-gray-300 font-sans ">
+                    <div class="flex flex-col space-y-2">
+                        <a href="#">Home</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Products</a>
+                        <a href="#">About us</a>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <a href="#">Careers</a>
+                        <a href="#">Community</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="mt-8  md:order-first md:space-y-14">
+                    <div class="hidden md:block">
+                        <img src="/images/logo.svg" alt="">
+                    </div>
+                    <div class="flex space-x-8 flex-wrap">
+                        <img src="/images/icon-facebook.svg" alt="" class="h-8 md:h-6">
+                        <img src="/images/icon-youtube.svg" alt="" class="h-8 md:h-6">
+                        <img src="/images/icon-twitter.svg" alt="" class="h-8 md:h-6">
+                        <img src="/images/icon-pinterest.svg" alt="" class="h-8 md:h-6">
+                        <img src="/images/icon-instagram.svg" alt="" class="h-8 md:h-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </body>
 
 </html>
