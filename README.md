@@ -14,4 +14,4 @@ I completed this challenge and create the landing page using html tailwindCss an
 
 ## Live url of the project
 
-[absamad Manage Landing](absamad-manage-landingpage.surge.sh)
+[absamad Manage Landing](https://www.absamad-manage-landingpage.surge.sh)
